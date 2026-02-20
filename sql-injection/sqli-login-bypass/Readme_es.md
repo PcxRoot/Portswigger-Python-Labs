@@ -43,7 +43,7 @@ python exploit.py -h --> Muestra la ayuda
 python exploit -t [URL]
 ```
 
-![Ejemplo de salida del exploit](./img/sqli_login_bypass.png)
+![Ejemplo de salida del exploit](./img/sqli-login-bypass.png)
 
 ---
 

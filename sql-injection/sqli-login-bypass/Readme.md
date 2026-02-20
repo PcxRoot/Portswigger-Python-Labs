@@ -43,6 +43,8 @@ python exploit.py -h --> Show help menu
 python exploit.py -t [URL]
 ```
 
+![Example of exploit output](./img/sqli-login-bypass.png)
+
 ## Methodology & Ethics
 
 >[!IMPORTANT]
