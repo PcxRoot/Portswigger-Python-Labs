@@ -18,7 +18,10 @@ This directory contains my custom automated tools for detecting and exploiting S
 
 ## 📂 Featured Labs
 
+
 | Lab Name | Vulnerability | Script Focus | State |
+
+| :--- | :--- | :--- | :--- |
 
 | [Lab: SQLi where hidden data](./sqli-where-hidden-data/) | "WHERE clause" Boolean | Modified WHERE clause | <font color="gren">Completed</font> |
 

@@ -84,10 +84,16 @@ __Exploit Breakdown:__
 
 __Visulaizing the Impact on Data__
 Consider the following extract from the `products` table:
-id,name,category,stock,released
-1,Coffee Maker,Cooking,238,1
-2,Gift Card,Gifts,1033,1
-3,Lawnmower,Garden,122,0
+
+| id| name| category| stock| released |
+
+| :--- | :--- | :--- | :--- | :--- |
+
+| 1 | Coffee Maker | Cooking | 238 | 1 |
+
+| 2 | Gift Card | Gifts | 1033 | 1 |
+
+| 3 | Lawnmower | Garden | 122 | 0 |
 
 __Injection Result:__
 The database engine evaluates the condition for every row. Since `1=1` is a constant truth and the `released = 1` restriction has been commented out, the database returns all rows in the table, including the product with ID: 3, exposing sensitive/hidden information.

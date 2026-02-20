@@ -80,10 +80,16 @@ __Desglose del exploit:__
 
 __Visualización del Impacto en los datos__
 Consideremos el siguiente extracto de la tabla `products`:
-id,nombre,category,stock,released
-1,Cafetera,Cocina,238,1
-2,Tarjeta Regalo,Gifts,1033,1
-3,Cortacésped,Jardin,122,0
+
+| id| name| category| stock| released |
+
+| :--- | :--- | :--- | :--- | :--- |
+
+| 1 | Cafetera | Cocina | 238 | 1 |
+
+| 2 | Gift Card | Gifts | 1033 | 1 |
+
+| 3 | Cortacesped | Jardín | 122 | 0 |
 
 __Resultado de la inyección:__
 El motor de base de datos evalúa la condición para cada fila. Dado que `1=1` es una constante verdadera y la restricción `released = 1` ha sido comentada, la base de datos devuelve todas las filas de la tabla, incluyendo el producto con id: 3, exponiendo información sensible/oculta.
