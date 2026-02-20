@@ -22,6 +22,7 @@ This directory contains my custom automated tools for detecting and exploiting S
 | Lab Name | Vulnerability | Script Focus | State |
 | :--- | :--- | :--- | :--- |
 | [Lab: SQLi where hidden data](./sqli-where-hidden-data/) | "WHERE clause" Boolean | Modified WHERE clause | <font color="gren">Completed</font> |
+| [Lab: SQLi allowing login bypass](./sqli-login-bypass/) | "WHERE clause" Boolean Commenting | Modified WHERE clause | <font color="gren">Completed</font> |
 | [Lab: Blind SQLi with conditional responses](./lab-blind-boolean) | Blind Boolean | Character-by-character automated guessing. | <font color="red">In progress</font> |
 | [Lab: UNION attack](./lab-union-data) | UNION-based | Table \& column enumeration. | <font color="red">In progress</font> |
 
