@@ -1,4 +1,4 @@
-\# 💉 SQL Injection (SQLi)
+# 💉 SQL Injection (SQLi)
 
 
 
@@ -6,29 +6,31 @@ This directory contains my custom automated tools for detecting and exploiting S
 
 
 
-\## 🛠️ Techniques Covered
+## 🛠️ Techniques Covered
 
-\- \*\*In-band (UNION based):\*\* Direct data extraction through the application's response.
+- __In-band (UNION based):__ Direct data extraction through the application's response.
 
-\- \*\*Blind (Boolean-based):\*\* Automating thousands of requests to guess data bit by bit based on TRUE/FALSE responses.
+- __Blind (Boolean-based):__ Automating thousands of requests to guess data bit by bit based on TRUE/FALSE responses.
 
-\- \*\*Blind (Time-based):\*\* Using time delays to exfiltrate information.
+- __Blind (Time-based):__ Using time delays to exfiltrate information.
 
 
 
-\## 📂 Featured Labs
+## 📂 Featured Labs
 
-| Lab Name | Vulnerability | Script Focus |
+| Lab Name | Vulnerability | Script Focus | State |
 
 | :--- | :--- | :--- |
 
-| \[Lab: Blind SQLi with conditional responses](./lab-blind-boolean) | Blind Boolean | Character-by-character automated guessing. |
+| [Lab: SQLi where hidden data](./sqli-where-hidden-data/) | "WHERE clause" Boolean | Modified WHERE clause | <font color="gren">Completed</font>
 
-| \[Lab: UNION attack](./lab-union-data) | UNION-based | Table \& column enumeration. |
+| [Lab: Blind SQLi with conditional responses](./lab-blind-boolean) | Blind Boolean | Character-by-character automated guessing. | <font color="red">In progress</font>
+
+| [Lab: UNION attack](./lab-union-data) | UNION-based | Table \& column enumeration. | <font color="red">In progress</font>
 
 
 
-\## 🚀 Common Logic
+## 🚀 Common Logic
 
 Most scripts here use the `requests` library to manage sessions and headers, ensuring the attack bypasses basic filters.
 
