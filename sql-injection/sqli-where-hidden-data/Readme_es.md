@@ -49,7 +49,7 @@ python exploit -t [URL]
 
 ## Metodología y Ética
 
->[!important] Importante
+>[!important]
 >__Aviso de Aprendizaje:__ A continuación se detalla el funcionamiento de la vulnerabilidad bajo un enfoque pedagógico libre de spoilers. Te animo a enfrentarte al laboratorio por tus propios medios antes de consultar este análisis. La verdadera maestría nace de la resolución persistente de problemas.
 
 ---
