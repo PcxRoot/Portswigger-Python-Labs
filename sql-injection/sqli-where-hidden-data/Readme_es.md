@@ -13,10 +13,6 @@ _Read this in English: [Readme.md](./Readme.md)_
 Este directorio contiene un exploit desarrollado en Python diseñado para automatizar la detección y explotación de la vulnerabilidad de este laboratorio.
 
 ### __Uso__
->Clonar el repositorio
-```
-git clone MODIFICAR
-```
 
 >Crear entonro virtual con Python (Recomendado)
 ```
@@ -131,19 +127,3 @@ Utilizar frameworks modernos (como Django ORM, Hibernate o Entity Framework) que
 ### 3. Validación de Entradas (Allow-listing)
 
 Dado que las categorías suelen ser un conjunto fijo de valores (Gifts, Pets, etc.), el servidor debería validar que el parámetro category coincida exactamente con una de las opciones permitidas antes de procesar la consulta.
-
-## Remediation: How to fix this vulnerability?
-
-The root cause of this vulnerability is the direct concatenation of user-supplied data into the SQL query. To prevent SQL Injection (SQLi), the following best practices should be implemented:
-
-### 1. Parameterized Queries (Prepared Statements)
-
-This is the most effective defense. By using placeholders, the database engine treats user input strictly as data, never as executable code.
-
-### 2. Use of ORMs
-
-Leverage modern frameworks that handle database interaction securely by default.
-
-### 3. Input Validation (Allow-listing)
-
-Validate that the `category` parameter matches a predefined list of valid categories before executing the query.

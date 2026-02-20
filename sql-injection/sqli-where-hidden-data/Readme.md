@@ -13,10 +13,6 @@ _Leer en Español: [Readme-es.md](Readme_es.md)_
 This directory contains a Python-based exploit designed to automate the detection and exploitation of the vulnerability found in this lab.
 
 ### __Usage__
->Clone the repository
-```
-git clone Modificar
-```
 
 >Create a Python virtual environment (Recommended)
 ```
@@ -117,3 +113,19 @@ __Script Execution Logic:__
 2. __Dynamic Injection:__ A second request is sent with the payload injected into the URL.
 
 3. __Content-Based Verification:__ Using the BeautifulSoup library, the script compares the volume of data received. If the number of elements in the DOM (product div objects) is higher than the baseline, the exploitation is confirmed as successful.
+
+## Remediation: How to fix this vulnerability?
+
+The root cause of this vulnerability is the direct concatenation of user-supplied data into the SQL query. To prevent SQL Injection (SQLi), the following best practices should be implemented:
+
+### 1. Parameterized Queries (Prepared Statements)
+
+This is the most effective defense. By using placeholders, the database engine treats user input strictly as data, never as executable code.
+
+### 2. Use of ORMs
+
+Leverage modern frameworks that handle database interaction securely by default.
+
+### 3. Input Validation (Allow-listing)
+
+Validate that the `category` parameter matches a predefined list of valid categories before executing the query.
