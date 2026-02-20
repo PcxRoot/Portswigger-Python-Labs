@@ -81,14 +81,10 @@ __Desglose del exploit:__
 __Visualización del Impacto en los datos__
 Consideremos el siguiente extracto de la tabla `products`:
 
-| id| name| category| stock| released |
-
+| id | name | category | stock | released |
 | :--- | :--- | :--- | :--- | :--- |
-
 | 1 | Cafetera | Cocina | 238 | 1 |
-
 | 2 | Gift Card | Gifts | 1033 | 1 |
-
 | 3 | Cortacesped | Jardín | 122 | 0 |
 
 __Resultado de la inyección:__

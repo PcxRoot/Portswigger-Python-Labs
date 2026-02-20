@@ -86,13 +86,9 @@ __Visulaizing the Impact on Data__
 Consider the following extract from the `products` table:
 
 | id| name| category| stock| released |
-
 | :--- | :--- | :--- | :--- | :--- |
-
 | 1 | Coffee Maker | Cooking | 238 | 1 |
-
 | 2 | Gift Card | Gifts | 1033 | 1 |
-
 | 3 | Lawnmower | Garden | 122 | 0 |
 
 __Injection Result:__
