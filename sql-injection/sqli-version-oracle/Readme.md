@@ -1,6 +1,6 @@
 # Lab: SQL Injection vulnerability returning data from an Oracle database
 
-_Leer en Español: [Readme.es.md](Readme.es.md)_
+_Leer en Español: [Readme.es.md](Readme_es.md)_
 
 [__Link to the Lab__](https://portswigger.net/web-security/sql-injection/examining-the-database/lab-querying-database-version-oracle)
 
