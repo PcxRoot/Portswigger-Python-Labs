@@ -32,7 +32,7 @@ python -m venv venv
 
 >Install dependencies
 ```python
-pip install -r rquirements.txt
+pip install -r requirements.txt
 ```
 
 >Run the script
@@ -43,11 +43,6 @@ python exploit.py -t [URL]
 ```
 
 ![Example of exploit output](./img/exploit_output.png)
-
----
-
->[!NOTE]
->__Lab Analysis:__ If you want to understand the vulnerability in depth, you will find a detailed technical explanation (no spoilers) regarding the attack logic and database behavior right below the usage section.
 
 ---
 
