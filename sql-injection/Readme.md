@@ -21,9 +21,9 @@ This directory contains my custom automated tools for detecting and exploiting S
 
 | Lab Name | Vulnerability | Script Focus | State |
 | :--- | :--- | :--- | :--- |
-| [Lab: SQLi where hidden data](./sqli-where-hidden-data/) | "WHERE clause" Boolean | Modified WHERE clause | :heavy_check_mark |
-| [Lab: SQLi allowing login bypass](./sqli-login-bypass/) | "WHERE clause" Boolean Commenting | Modified WHERE clause | :heavy_check_mark |
-| [Lab: UNION attack on Oracle database](./sqli-version-oracle/) | UNION-based __Oracle__ | Table \& column enumeration, Querying database data  | :heavy_check_mark |
+| [Lab: SQLi where hidden data](./sqli-where-hidden-data/) | "WHERE clause" Boolean | Modified WHERE clause | :heavy_check_mark: |
+| [Lab: SQLi allowing login bypass](./sqli-login-bypass/) | "WHERE clause" Boolean Commenting | Modified WHERE clause | :heavy_check_mark: |
+| [Lab: UNION attack on Oracle database](./sqli-version-oracle/) | UNION-based __Oracle__ | Table \& column enumeration, Querying database data  | :heavy_check_mark: |
 
 
 ## 🚀 Common Logic
