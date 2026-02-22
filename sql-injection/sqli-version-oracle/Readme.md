@@ -87,7 +87,8 @@ In __Oracle__, every column in a `UNION` must be compatible with the data type o
 __3. Version Extraction (Oracle Specific)__
 Once the string-compatible column is identified, we query `v$version`, which is a special view in Oracle containing the software banner.
 
-# Protocol analysis: HTTP GET Method
+## Protocol analysis: HTTP GET Method
+
 The vulnerability manifests through the HTTP GET method. Input parameters are transmitted directly in the URL's Query String:
 
 ```HTTP
