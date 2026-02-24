@@ -134,7 +134,7 @@ __Lógica de Ejecución del Script:__
 3. __Inyección SQL vía POST:__ Se envía una petición `POST` al endpoint `/login`. El cuerpo de la petición incluye el token CSRF capturado y el payload de __Tautology Injection__ (`' OR 1=1 --`) en el campo de la contraseña, forzando al motor de la base de datos a validar la sesión del usuario administrator como verdadera.
 4. __Validación de identidad y Éxito:__ Tras la inyección, el script analiza el DOM de la página de respuesta. Busca el contenedor con el ID `account-content` y extrae el texto del primer párrafo. La explotación se confirma como exitosa solo si el mensaje recuperado contiene explícitamente la cadena `administrator`, verificando que el bypass de autenticación ha sido efectivo.
 
-## Mitigación: prevención de Inyección en Autenticación
+## Mitigación: Prevención de Inyección en Autenticación
 
 La solución definitiva para evitar este tipo de bypass es el uso de __Sentencias Preparadas (Prepared Statements)__. Al parametrizar la consulta, el motor de la base de datos nunca interpretará los caracteres `'` o `--` como código, sino como parte del texto del nombre de usuario.
 
