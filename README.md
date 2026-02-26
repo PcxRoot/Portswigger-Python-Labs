@@ -30,6 +30,7 @@ This content is for **educational and research purposes only**.
 | Category | Description | Status |
 | :--- | :--- | :--- |
 | [💉 SQL Injection](./sql-injection) | Data extraction via UNION and Blind SQLi techniques. | In progress |
+| [🔓 Authentication](./Authentication/) | Broken Authentication allowing unauthorized account access. | In progress |
 
 ---
 

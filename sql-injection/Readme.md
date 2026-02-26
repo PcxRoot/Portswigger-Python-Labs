@@ -32,4 +32,3 @@ This directory contains my custom automated tools for detecting and exploiting S
 ## 🚀 Common Logic
 
 Most scripts here use the `requests` library to manage sessions and headers, ensuring the attack bypasses basic filters.
-
