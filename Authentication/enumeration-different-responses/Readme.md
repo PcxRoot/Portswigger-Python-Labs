@@ -41,8 +41,10 @@ python exploit.py -h --> Show help menu
 
 python exploit.py -t [URL] -u [Usernames_list] -p [Passwords_list]
 ```
-
-![Example of exploit output]()
+<p align="center">
+    <img src="./img/banner.png" width="45%" alt="Banner" />
+    <img src="./img/succes.png" width="45%" alt="Banner" />
+</p>
 
 ## Methodology & Ethics
 
@@ -124,7 +126,7 @@ Unlike basic sequential attacks, this script utilizes a `requests.Session()` obj
 3. __Concurrent Orchestration (ThreadPoolExecutor)__
 The core of the performance lies in the use of __parallel threads__:
 
-- __Architecture:__ A team of __10 workers__ (_threads_) is implemented to consume tasks from a global queue.
+- __Architecture:__ A team of __10 workers__ (_threads_) (You can chenge it) is implemented to consume tasks from a global queue.
 
 - __Nested Loop:__ The script iterates over every user and password, sending these combinations to the thread pool asynchronously.
 

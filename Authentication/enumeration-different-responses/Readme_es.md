@@ -124,7 +124,7 @@ A diferencia de ataques secuenciales básicos, este script utiliza un objeto `re
 3. __Orquestación Concurrente (ThreadPoolExecutor)__
 El núcleo del rendimiento reside en el uso de __hilos paralelos__:
 
-- __Arquitectura:__ Se implementa un equipo de __10 workers__ (_hilos_) que consumen tareas de una cola global.
+- __Arquitectura:__ Se implementa un equipo de __10 workers__ (_hilos_) (Se puede cambiar) que consumen tareas de una cola global.
 
 - __Bucle Anidado:__ El script itera sobre cada usuario y cada contraseña, enviando estas combinaciones al pool de hilos de forma asíncrona.
 
