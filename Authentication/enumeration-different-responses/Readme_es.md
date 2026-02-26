@@ -42,8 +42,10 @@ python exploit.py -h --> Muestra la ayuda
 
 python exploit -t [URL] -u [Lista_Ususarios] -p [Lista_Contraseñas]
 ```
-
-![Ejemplo de salida del exploit]()
+<p align="center">
+    <img src="./img/banner.png" width="45%" alt="Banner" />
+    <img src="./img/succes.png" width="45%" alt="Banner" />
+</p>
 
 ---
 
