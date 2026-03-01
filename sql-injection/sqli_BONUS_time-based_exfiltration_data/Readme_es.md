@@ -125,15 +125,15 @@ Cookie: session=Hjh757UG64gd75; TrackingId=x' || (SELECT CASE WHEN(SUBSTRING(cur
 ```
 
 __Desglose del Payload:__
-`SELECT CASE WHEN () THEN ... ELSE ... END`: Es la estructura lógica principal. Funciona como in `if/else` en programación tradicional.
+1. `SELECT CASE WHEN () THEN ... ELSE ... END`: Es la estructura lógica principal. Funciona como in `if/else` en programación tradicional.
 - __Condición:__ ¿Es el valor del carácter en la posición $1$ igual a $a$?
 - __Acción True:__ Si se cumple, ejecuta `pg_sleep(5)`, lo que genera un retraso detectable.
 - __Acción False:__ Si no se cumple, ejecuta `pg_sleep(0)`, devolviendo la respuesta de inmediato.
 
-`SUBSTRING(string, start, length)`: Esta función nos permite aislar un solo carácter de una cadena de texto (como el nombre de la base de datos).
+2. `SUBSTRING(string, start, length)`: Esta función nos permite aislar un solo carácter de una cadena de texto (como el nombre de la base de datos).
 - __Ejemplo:__ `SUBSTRING('admin',1,1)` nos devuelve 'a'.
 
-`pg_sleep(segundos)`: Es la función encargada de pausar el proceso del motor de base de datos. Es nuestro __canal de comunicación lateral__. No necesitamos ver el dato en pantalla; el tiempo que tarda el servidor em responder nos da la respuesta "_Sí_" o "_No_".
+3. `pg_sleep(segundos)`: Es la función encargada de pausar el proceso del motor de base de datos. Es nuestro __canal de comunicación lateral__. No necesitamos ver el dato en pantalla; el tiempo que tarda el servidor em responder nos da la respuesta "_Sí_" o "_No_".
 
 ---
 
