@@ -8,13 +8,13 @@ _Read this in English: [Readme.md](./Readme.md)_
 > **Análisis del Laboratorio:** Si buscas comprender la vulnerabilidad a fondo, justo debajo de la sección de uso encontrarás una **explicación técnica detallada (sin spoilers)** sobre el funcionamiento del ataque y la lógica de la base de datos.
 >Ir directamente [allí](#metodología-y-ética)
 
-# Script de Automatización
+## Script de Automatización
 
 Este directorio contiene un exploit desarrollado en Python diseñado para automatizar la detección y explotación de la vulnerabilidad de este laboratorio.
 
 ### __Uso__
 
->Crear entonro virtual con Python (Recomendado)
+>Crear entorno virtual con Python (Recomendado)
 ```
 python -m venv venv
 ```
