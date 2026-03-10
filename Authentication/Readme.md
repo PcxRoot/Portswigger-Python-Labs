@@ -17,6 +17,7 @@ This directory contains my custom automated tools for detecting and exploiting f
 | Lab Name | Vulnerability | Script Focus | State |
 | :--- | :--- | :--- | :--- |
 | [Lab: Username enumeration via different responses](./enumeration-different-responses/) | Response-based Enumeration | Response parsing & Threading | :heavy_check_mark: |
+| [Lab: 2FA simple bypass](./2FA%20simple%20bypass/) | 2FA Authentication Bypass via Forceful Browsing | Querying specific endpoints | :heavy_check_mark: |
 
 ## Common Logic
 Authentication exploits require a higher degree of __state management__ compared to simple injections. Most scripts here implement:
