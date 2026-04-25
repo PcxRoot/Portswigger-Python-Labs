@@ -213,7 +213,7 @@ Cuando una aplicación es vulnerable a la inyección SQL y los resultados de la 
 
 La palabra clave `UNION` nos permite ejecutar uno o más consultas `SELECT` consultas y agregar los resultados a la consulta original.
 
->[!example]
+>[!Note]
 >Ejemplo
 >```SQL
 >SELECT a, b, FROM table1 UNION SELECT c, d FROM table2
