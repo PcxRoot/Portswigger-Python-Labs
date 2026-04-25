@@ -102,7 +102,8 @@ La consulta modificada devuelve todos los elementos donde: `category` es `Gifts`
 >- Muéstrame todos los elementos cuya categoría es `Gifts`
 >- O que `1=1`
 
->[!example]- Ejemplo
+>[!example]
+>Ejemplo
 >
 | id  | name     | category   | stock | released |
 | --- | -------- | ---------- | ----- | -------- |
