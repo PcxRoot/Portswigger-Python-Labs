@@ -14,6 +14,10 @@ This directory contains my custom automated tools for detecting and exploiting S
 
 - __Blind (Time-based):__ Using time delays to exfiltrate information.
 
+## 📚Explication
+
+In this link you will find an explication of SQLi (Only in Spanish)
+***[Explicación](./explication)***
 
 
 ## 📂 Featured Labs
