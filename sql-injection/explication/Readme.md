@@ -253,8 +253,8 @@ Existen dos métodos efectivos para determinar cuántas columnas se devuelven de
   >[!Note]
   >***Ejemplo***
   > https://insecure-website.com/filter?category=Gifts'+ORDER+BY+4-- 
-  ><font color=red>Internal Server Error</font>
-<br>
+  >Internal Server Error
+  
 - El segundo método implica enviar una serie de *payloads* `UNION SELECT` que especifican un número diferentes de valores nulos:
   `' UNION SELECT NULL--`
   `' UNION SELECT NULL,NULL--`
@@ -271,8 +271,8 @@ Existen dos métodos efectivos para determinar cuántas columnas se devuelven de
   
   >[!Note]
   >Ejemplo práctico
-  > \text{https://insecure-website.com/filter?category=Gifts'+UNION+SELECT+NULL,NULL,NULL--} 
-  ><font color=gren>Respuesta correcta</font>
+  >https://insecure-website.com/filter?category=Gifts'+UNION+SELECT+NULL,NULL,NULL--
+  >Respuesta correcta
   
 ##### Sintaxis específica de la base de datos
 
