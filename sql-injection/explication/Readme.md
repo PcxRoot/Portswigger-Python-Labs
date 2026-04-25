@@ -103,14 +103,14 @@ La consulta modificada devuelve todos los elementos donde: `category` es `Gifts`
 >- O que `1=1`
 
 >[!Note]
->Ejemplo
+>***Ejemplo***
 >
-| id  | name     | category   | stock | released |
-| --- | -------- | ---------- | ----- | -------- |
-| 1   | mantel   | Cocina     | 234   | 1        |
-| 2   | pancarta | Gifts      | 24    | 1        |
-| 3   | carpeta  | Gifts      | 543   | 0        |
-| 4   | Vela     | Decoración | 321   | 1        |
+>| id  | name     | category   | stock | released |
+>| --- | -------- | ---------- | ----- | -------- |
+>| 1   | mantel   | Cocina     | 234   | 1        |
+>| 2   | pancarta | Gifts      | 24    | 1        |
+>| 3   | carpeta  | Gifts      | 543   | 0        |
+>| 4   | Vela     | Decoración | 321   | 1        |
 >
 >Empezando por la primera fila:
 >1. El valor de la columna `category` es `Gifts`? --> NO
@@ -201,7 +201,7 @@ Un atacante puede enviar la entrada:
 
 Esto hace que la aplicación devuelva todos los nombres de usuario y contraseñas junto con los nombres y descripciones de los productos.
 
->[!bug]
+>[!Caution]
 >Consulta SQL maliciosa
 >```SQL
 >SELECT name, description FROM products WHERE category = 'Gifts' UNION SELECT username, password FROM users--'
@@ -250,8 +250,8 @@ Existen dos métodos efectivos para determinar cuántas columnas se devuelven de
   
   La aplicación puede devolver el error de la base de datos en su respuesta *HTTP*, pero también podría devolver una respuesta de error genérica. En otros casos, es posible que simplemente no arroje ningún resultado. Siempre que podamos detectar alguna diferencia en la respuesta, podemos inferir cuántas columnas se devuelven de la consulta.
   
-  >[!example]
-  >Ejemplo
+  >[!Note]
+  >***Ejemplo***
   > https://insecure-website.com/filter?category=Gifts'+ORDER+BY+4-- 
   ><font color=red>Internal Server Error</font>
 <br>
@@ -269,7 +269,7 @@ Existen dos métodos efectivos para determinar cuántas columnas se devuelven de
   Cuando el número de valores nulos coincide con el número de columnas, la base de datos devuelve una fila adicional en el conjunto de resultados, que contiene valores nulos en cada columna.
   El efecto sobre la respuesta HTTP depende del código de la aplicación. Si tienes suerte, verás contenido adicional dentro de la respuesta, como una fila adicional en una tabla HTML. De lo contrario, los valores nulos podrían desencadenar un error diferente, como a `NullPointerException`. En el peor de los casos, la respuesta podría parecer la misma que una respuesta causada por un número incorrecto de valores nulos. Esto haría que este método fuera ineficaz.
   
-  >[!example]
+  >[!Note]
   >Ejemplo práctico
   > \text{https://insecure-website.com/filter?category=Gifts'+UNION+SELECT+NULL,NULL,NULL--} 
   ><font color=gren>Respuesta correcta</font>
